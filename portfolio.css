@@ -1,0 +1,13 @@
+body {
+    font-family: 'Courier New';
+}    
+
+
+h1 {
+    font-size: 3rem;
+    color: blue; line-height: 1.5;
+}
+
+.point {
+    font-weight: bold;
+}
