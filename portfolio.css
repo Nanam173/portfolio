@@ -1,13 +1,27 @@
 body {
     font-family: 'Courier New';
+    background-image: url('grass1.png');
+    background-size: 100% 100%;
+    margin: 10em;
+    font-size: large;
 }    
-
 
 h1 {
     font-size: 3rem;
-    color: blue; line-height: 1.5;
+    margin: 1em;
+    margin-top: 2em;
 }
 
-.point {
+div.containts {
+    margin-right: 11em;
+    margin-left: 11em;
+}
+
+ul div {
     font-weight: bold;
 }
+
+li {
+    list-style-type: none;
+}
+
