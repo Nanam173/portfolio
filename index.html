@@ -8,82 +8,101 @@
     <link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
 <body>
-    <h1>About me</h1>
-        <div class="containts">
-            Hi, I’m Nanami Hori — a passionate full stack developer currently based in Sydney, Australia.<br>
-            I love building thoughtful, user-focused web applications that solve real-world problems.<br>
-            I’m especially excited about working with globally minded teams and building tech that makes a positive impact — wherever I am in the world.
-        </div>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+        <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+        <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+    </div>
 
-    <h1>Projects</h1>
-        <div class="containts">
-            <h2>On-Demand Transportation System</h2>
-                <div>
-                    <ul>
-                        <dev>Tech Used:</dev>
-                        <li>Ruby on Rails, AWS, JavaScript, HTML/CSS</li>
-                    </ul>
-                    <ul>
-                        <dev>Summary:</dev>
-                        <li>Developed a on-demand transportation system, which achieved top market share in Japan during development.</li>
-                    </ul>
-                    <ul>
-                        <dev>What I did:</dev>
-                    
-                        <li>Designed and implemented backend features using Ruby on Rails, focusing on scalability and performance</li>
+    <div id="aboutme" class="tabcontent">
+        <h1>About me</h1>
+            <div class="containts">
+                Hi, I’m Nanami Hori — a passionate full stack developer currently based in Sydney, Australia.<br>
+                I love building thoughtful, user-focused web applications that solve real-world problems.<br>
+                I’m especially excited about working with globally minded teams and building tech that makes a positive impact — wherever I am in the world.
+            </div>
+    </div>
 
-                        <li>Developed a patented notification system to enhance communication and streamline operations</li>
-                            
-                        <li>Integrated Google reCAPTCHA for secure and user-friendly authentication</li>
-                            
-                        <li>Managed cloud infrastructure using AWS services and Terraform, ensuring stability and automation</li>
-                            
-                        <li>Contributed to Android app development (Java/Kotlin) to support mobile user accessibility</li>
-                            
-                        <li>Led and collaborated in Agile sprints to continuously improve system quality and delivery speed</li>
-                            
-                        <li>Provided direct customer support, solving technical issues and improving user satisfaction</liß>
-                    </ul>
-                    <div>Note: source code not publicly available due to company policy.</div>
-                </div>
-        </div>
-    <h1>Skills & Tech Stack</h1>
-        <div class="containts">
-            <ul>
-                <dev>Frameworks:</dev>
-                <li>Ruby on Rails, JavaScript, HTML, CSS, Java</li>
-            </ul>
+    <div id="projects" class="tabcontent">
+        <h1>Projects</h1>
+            <div class="containts">
+                <h2>On-Demand Transportation System</h2>
+                    <div>
+                        <ul>
+                            <dev>Tech Used:</dev>
+                            <li>Ruby on Rails, AWS, JavaScript, HTML/CSS</li>
+                        </ul>
+                        <ul>
+                            <dev>Summary:</dev>
+                            <li>Developed a on-demand transportation system, which achieved top market share in Japan during development.</li>
+                        </ul>
+                        <ul>
+                            <dev>What I did:</dev>
+                        
+                            <li>Designed and implemented backend features using Ruby on Rails, focusing on scalability and performance</li>
 
-            <ul>DevOps:
-                <li>AWS (EC2, RDS, S3, CloudWatch), Terraform, Jenkins, CI/CD pipelines, Git</li>
-            </ul>
+                            <li>Developed a patented notification system to enhance communication and streamline operations</li>
+                                
+                            <li>Integrated Google reCAPTCHA for secure and user-friendly authentication</li>
+                                
+                            <li>Managed cloud infrastructure using AWS services and Terraform, ensuring stability and automation</li>
+                                
+                            <li>Contributed to Android app development (Java/Kotlin) to support mobile user accessibility</li>
+                                
+                            <li>Led and collaborated in Agile sprints to continuously improve system quality and delivery speed</li>
+                                
+                            <li>Provided direct customer support, solving technical issues and improving user satisfaction</liß>
+                        </ul>
+                        <div>Note: source code not publicly available due to company policy.</div>
+                    </div>
+            </div>
+    </div>
 
-            <ul>Databases:
-                <li>MySQL</li>
-            </ul>
+    <div id="skills" class="tabcontent">
+        <h1>Skills & Tech Stack</h1>
+            <div class="containts">
+                <ul>
+                    <dev>Frameworks:</dev>
+                    <li>Ruby on Rails, JavaScript, HTML, CSS, Java</li>
+                </ul>
 
-            <ul>Tools & Platforms:
-                <li>Linux, GitHub, Docker, New Relic, Google reCAPTCHA</li>
-            </ul>
-            
-            <ul>Development Practices:
-                <li>Agile/Scrum, Test-Driven Development, Version Control, Debugging</li>
-            </ul>
-            
-            <ul>Other Skills:
-                <li>System Design, UI/UX Design, Customer Support Communication</li>
-            </ul>
-        </div>
-            
-    <h1>Resume</h1>
-        <div class="containts">
-            <a href="./Nanami_cv_it.pdf" download="resume_nanami_hori.pdf">click to download</a>
-        </div>
-    
-    <h1>Contact</h1>
-        <div class="containts">
-            <ul><a href="https://www.linkedin.com/in/nanami-hori-0a4527329/">LinkedIn</a></ul>
-            <ul>email: nnm.hori@gmail.com</ul>
-        </div>
+                <ul>DevOps:
+                    <li>AWS (EC2, RDS, S3, CloudWatch), Terraform, Jenkins, CI/CD pipelines, Git</li>
+                </ul>
+
+                <ul>Databases:
+                    <li>MySQL</li>
+                </ul>
+
+                <ul>Tools & Platforms:
+                    <li>Linux, GitHub, Docker, New Relic, Google reCAPTCHA</li>
+                </ul>
+                
+                <ul>Development Practices:
+                    <li>Agile/Scrum, Test-Driven Development, Version Control, Debugging</li>
+                </ul>
+                
+                <ul>Other Skills:
+                    <li>System Design, UI/UX Design, Customer Support Communication</li>
+                </ul>
+            </div>
+    </div>
+
+    <div id="resume" class="tabcontent">
+        <h1>Resume</h1>
+            <div class="containts">
+                <a href="./Nanami_cv_it.pdf" download="resume_nanami_hori.pdf">click to download</a>
+            </div>
+    </div>
+
+    <div id="contact" class="tabcontent">
+        <h1>Contact</h1>
+            <div class="containts">
+                <ul><a href="https://www.linkedin.com/in/nanami-hori-0a4527329/">LinkedIn</a></ul>
+                <ul>email: nnm.hori@gmail.com</ul>
+            </div>
+    </div>
+
+    <script src="./js/tab.js"></script>
 </body>
 </html>

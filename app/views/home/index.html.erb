@@ -1,0 +1,30 @@
+<body>
+    <div class="tab">
+        <%= button_to "Home", home_path, method: :get, class: "tablinks" %>
+        <%= button_to "Projects", projects_path, method: :get, class: "tablinks" %>
+    </div>
+
+    <div id="aboutme" class="tabcontent">
+        <h1>About me</h1>
+        <div class="contents">
+            Hi, I’m Nanami Hori — a passionate full stack developer currently based in Sydney, Australia.<br>
+            I love building thoughtful, user-focused web applications that solve real-world problems.<br>
+            I’m especially excited about working with globally minded teams and building tech that makes a positive impact — wherever I am in the world.
+        </div>
+    </div>
+
+    <div id="resume" class="tabcontent">
+        <h1>Resume</h1>
+        <div class="contents">
+            <a href="./Nanami_cv_it.pdf" download="resume_nanami_hori.pdf">click to download</a>
+        </div>
+    </div>
+
+    <div id="contact" class="tabcontent">
+        <h1>Contact</h1>
+        <div class="contents">
+            <ul><a href="https://www.linkedin.com/in/nanami-hori-0a4527329/">LinkedIn</a></ul>
+            <ul>email: nnm.hori@gmail.com</ul>
+        </div>
+    </div>
+</body>
