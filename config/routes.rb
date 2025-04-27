@@ -13,7 +13,6 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   root "home#index"
-
-  get "/home", to: "home#index" 
-  get '/projects', to: 'projects#index'
+  resources :projects, only: [:index]
+  resources :contacts, only: [:index]
 end
