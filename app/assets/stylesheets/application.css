@@ -56,24 +56,14 @@ h1 {
     margin-top: 2em;
 }
 
-.content ul {
-    /* width: 100%; */
-    display: inline-block; 
-    list-style-position: inside;
-    list-style-type: none;
-    /* border: 1px solid #ddd; */
-}
-
 .devide_center {
     display: flex;
     border: none;
     margin: 1em 10em;
 }
 
-/* 左右のエリア */
 .left {
     flex: 1;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     border-right: 2px solid #82ee23;
@@ -86,7 +76,6 @@ h1 {
     align-items: center;
 }
 
-  /* 中央に配置するボックス */
 .devide_center > p {
     width: 80%;
     padding: 20px;
@@ -113,6 +102,10 @@ h1 {
 .subheading p {
     display: inline-block;
     border-bottom: solid 4px #82ee23;
+}
+
+.subheading li {
+    list-style-type: none;
 }
 
 ul li {
