@@ -1,13 +1,51 @@
+.tab {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 2em 2em;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #2022a5;
+}
+  
+.tab button.active {
+    background-color: #b30505;
+}
+
 body {
     font-family: 'Courier New';
+    background-image: url('grass1.png');
+    background-size: 100% 100%;
+    margin: 10em;
+    font-size: large;
 }    
-
 
 h1 {
     font-size: 3rem;
-    color: blue; line-height: 1.5;
+    margin: 1em;
+    margin-top: 2em;
 }
 
-.point {
+div.containts {
+    margin-right: 11em;
+    margin-left: 11em;
+}
+
+ul div {
     font-weight: bold;
 }
+
+li {
+    list-style-type: none;
+}
+
