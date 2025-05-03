@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   root "home#index"
-  resources :projects, only: [:index]
-  resources :contacts, only: [:index]
+  resources :projects, only: :index
+  resources :contacts, only: :index
 end

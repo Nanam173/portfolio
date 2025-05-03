@@ -1,6 +1,18 @@
 require_relative "boot"
 
-require "rails/all"
+# require "rails/all"
+
+%w(
+  action_controller
+  action_view
+  rails/test_unit
+  sprockets
+).each do |framework|
+  begin
+    require "#{framework}/railtie"
+  rescue LoadError
+  end
+end
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
