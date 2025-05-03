@@ -2,12 +2,12 @@ require_relative "boot"
 
 # require "rails/all"
 
-%w(
+%w[
   action_controller
   action_view
   rails/test_unit
   sprockets
-).each do |framework|
+].each do |framework|
   begin
     require "#{framework}/railtie"
   rescue LoadError
