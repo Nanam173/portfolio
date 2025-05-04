@@ -1,9 +1,7 @@
-<header>
-  <nav class="tab">
-    <ul>
-      <li><%= button_to "Home", root_path, method: :get %></li>
-      <li><%= button_to "Projects", projects_path, method: :get %></li>
-      <li><%= button_to "Contact", contacts_path, method: :get %></li>
-    </ul>
-  </nav>
-</header>
+<div class="tab-container">
+  <ul>
+    <li><%= button_to "Home", root_path, method: :get %></li>
+    <li><%= button_to "Projects", projects_path, method: :get %></li>
+    <li><%= button_to "Contact", contacts_path, method: :get %></li>
+  </ul>
+</div>

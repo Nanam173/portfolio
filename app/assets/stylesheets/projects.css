@@ -1,0 +1,83 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+
+.devide_center {
+    display: flex;
+    border: none;
+    margin: 1em 10em;
+}
+
+.left {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #82ee23;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.devide_center > p {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.devided_3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.devided_3 > ul {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+/* // タブ切り替え */
+.tab {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border-left: solid 1px #CCC;
+  border-bottom: solid 1px #CCC;
+}
+.tab:first-child {
+  border-left: none;
+}
+/* // タブがactiveのときのデザイン */
+.tab-active {
+  color: #FFF;
+  background: #19b5d1;
+  transition: all 0.2s ease-in-out;
+}
+/* // タブの中身、最初は非表示 */
+.tabbox {
+  display: none;
+  padding: 15px;
+}
+/* // box-showクラスのものだけ表示 */
+.box-show {
+  display: block;
+}
+/* // hover時のアクション */
+.tab:hover{
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+  transform: translateY(-1px);
+}

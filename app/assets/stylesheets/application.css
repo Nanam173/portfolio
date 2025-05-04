@@ -9,20 +9,22 @@
  * Consider organizing styles into separate files for maintainability.
  */
 
-nav.tab {
+.tab-container {
+    height: auto;             /* 高さを自動に */
+    overflow: visible;  
+    position: fixed;     /* または absolute/fixed でもOK */
+    z-index: 10;
     background-color: #2d8fdd;
     width: 100%;
-    position: fixed; 
-    top: 0; 
-    left: 0;
+    top: 0;
 }
 
-.tab li {
+.tab-container li {
     float: left;
     list-style-type: none;
 }
 
-.tab button {
+.tab-container button {
     background-color: inherit;
     color: white;
     float: left;
@@ -33,64 +35,41 @@ nav.tab {
     transition: 0.3s;
 }
 
-.tab button:hover {
+.tab-container button:hover {
     background-color: #62a520;
 }
   
-.tab button.active {
+.tab-container button.active {
     background-color: #b30505;
 }
 
-body {
+.contents {
     background-color: black;
     font-family: 'Courier New';
     color: white;
     background-size: 100% 100%;
-    margin: 10% 10%;
     font-size: large;
-} 
+    text-align: center;
+    margin-top: 6em;
+}
 
-h1 {
+/* h1 {
     font-size: 3rem;
     color: #82ee23;
     margin-top: 2em;
-}
+} */
 
-.devide_center {
+.section {
     display: flex;
-    border: none;
-    margin: 1em 10em;
+    justify-content: center; /* 横方向の中央 */
+    align-items: center;     /* 縦方向の中央 */
+    height: 100vh; 
 }
 
-.left {
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    border-right: 2px solid #82ee23;
-}
-
-.right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.devide_center > p {
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-}
-
-.devided_3 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.devided_3 > ul {
-    width: 80%;
-    padding: 20px;
-    text-align: center;
+.container {
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #1a1a1a;
 }
 
 .subheading {
