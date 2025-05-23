@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   resources :contacts, only: :index
+  resources :works, only: [ :index, :show ]
 end

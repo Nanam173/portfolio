@@ -32,3 +32,6 @@ en:
   contacts:
     index:
       title: "Contacts"
+  works:
+    index:
+      title: "Works"

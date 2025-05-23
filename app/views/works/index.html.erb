@@ -1,0 +1,9 @@
+<h1><%= t ".title" %></h1>
+
+<div id="works">
+    <% @works.each do |work| %>
+        <div>
+            <%= link_to work.name, work_path(work) %>
+        </div>
+    <% end %>
+</div>
