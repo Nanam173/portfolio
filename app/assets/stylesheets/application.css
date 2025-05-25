@@ -32,3 +32,12 @@ nav a {
 nav a:hover {
     background-color: #f0f0f0;
 }
+
+main {
+    display: flex;             /* フレックスボックスを使用 */
+    justify-content: center;   /* 横方向中央揃え */
+}
+
+#container {
+    text-align: center;
+}
