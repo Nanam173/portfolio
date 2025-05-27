@@ -5,7 +5,7 @@
         <%= link_to work_path(work), class: "work-card" do %>
             <%= image_tag "/Users/nanami/github/portfolio/public/icon.png", class: "work-image" %>
             <h3 class="work-title"><%= work.name %></h3>
-            <p class="work-description"><%= work.description %></p>
+            <p class="work-description"><%= work.description.slice(0..200) %>...</p>
         <% end %>
     <% end %>
 </div>
