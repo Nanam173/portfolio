@@ -2,10 +2,8 @@
 
 <div id="works">
     <% @works.each do |work| %>
-        <%= link_to work_path(work), class: "work-card" do %>
-            <%= image_tag "image.png", class: "work-image" %>
-            <h3 class="work-title"><%= work.name %></h3>
-            <p class="work-description"><%= work.description.slice(0..200) %>...</p>
-        <% end %>
+        <div>
+            <%= link_to work.name, work_path(work) %>
+        </div>
     <% end %>
 </div>

@@ -8,36 +8,3 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
-
-body {
-    background-color: #f0f0f0;
-    margin: 0;                 /* デフォルト余白を削除 */
-    padding: 0;
-}
-
-header {
-   background-color: #20cc98;
-   text-align: center;
-   height: 90px;
-}
-
-nav a {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block; /* ← 必須！ */
-    padding: 12px 16px;     /* ← クリック範囲を広げる */
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #f0f0f0;
-}
-
-main {
-    display: flex;             /* フレックスボックスを使用 */
-    justify-content: center;   /* 横方向中央揃え */
-}
-
-#container {
-    text-align: center;
-}
