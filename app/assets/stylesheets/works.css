@@ -1,0 +1,51 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+
+#works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.work-card {
+  display: block;                  /* a タグ全体をブロックに */
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  text-decoration: none;          /* 下線を消す */
+  color: inherit;                 /* 親の文字色を引き継ぐ */
+}
+
+.work-card:hover {
+  background-color: #f9f9f9;
+}
+
+.work-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.work-title {
+  font-size: 1.25rem;
+  margin: 8px 0 4px;
+}
+
+.work-description {
+  font-size: 0.95rem;
+  color: #555;
+}
