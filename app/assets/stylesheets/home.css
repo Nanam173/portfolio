@@ -1,0 +1,24 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+
+.introduction {
+  max-width: 800px;         /* コンテンツ幅の上限 */
+  margin: 0 auto;           /* 左右中央寄せ */
+  padding: 0 24px;          /* 左右に余白をつける（スマホにも優しい） */
+  text-align: left;       /* テキストを中央寄せ（任意） */
+  line-height: 1.5;         /* 読みやすい行間 */
+  font-size: 1.2rem;  
+}
+
+.title {
+  font-size: 3.0rem;        /* タイトルの大きさ */
+  margin-bottom: 16px;      /* タイトル下の余白 */
+}
