@@ -1,0 +1,10 @@
+<p><%= link_to "Back", works_path %></p>
+
+<section class="work">
+    <section class="work-info">
+        <% cache @work do %>
+            <h1><%= @work.name %></h1>
+            <%= @work.description %>
+        <% end %>
+    </section>
+</section>
