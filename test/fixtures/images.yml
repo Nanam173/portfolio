@@ -2,8 +2,8 @@
 
 one:
   work: training
-  file_name: image1.jpg
+  file_name: awesome1.png
 
 two:
   work: first_project
-  file_name: image2.jpg
+  file_name: awesome2.png
