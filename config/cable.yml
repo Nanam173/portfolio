@@ -8,9 +8,15 @@ development:
 test:
   adapter: test
 
-production:
+prod_common: &prod_common
   adapter: postgresql
-  url: <%= ENV['DATABASE_URL'] %>
+  host: <%= ENV["APP_DATABASE_HOST"] %>
+  database: postgres
+  username: postgres
+  password: <%= ENV["APP_DATABASE_PASSWORD"] %>
+
+production:
+  primary:
+    <<: *prod_common
   queue:
-    adapter: postgresql
-    url: <%= ENV['DATABASE_URL'] %>
+    <<: *prod_common

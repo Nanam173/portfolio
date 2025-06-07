@@ -20,22 +20,21 @@ test:
   <<: *default
   database: storage/test.sqlite3
 
-
 # Store production database in the storage/ directory, which by default
 # is mounted as a persistent Docker volume in config/deploy.yml.
+prod_common: &prod_common
+  adapter: postgresql
+  host: <%= ENV["APP_DATABASE_HOST"] %>
+  database: postgres
+  username: postgres
+  password: <%= ENV["APP_DATABASE_PASSWORD"] %>
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
 production:
   primary:
-    adapter: postgresql
-    encoding: unicode
-    pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-    url: <%= ENV['DATABASE_URL'] %>
+    <<: *prod_common
   queue:
-    adapter: postgresql
-    encoding: unicode
-    pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-    url: <%= ENV['DATABASE_URL'] %>
+    <<: *prod_common
   cache:
-    adapter: postgresql
-    encoding: unicode
-    pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-    url: <%= ENV['DATABASE_URL'] %>
+    <<: *prod_common
