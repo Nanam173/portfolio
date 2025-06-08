@@ -8,10 +8,15 @@ development:
 test:
   adapter: test
 
+prod_common: &prod_common
+  adapter: postgresql
+  host: <%= ENV["APP_DATABASE_HOST"] %>
+  database: postgres
+  username: <%= ENV["APP_DATABASE_USERNAME"] %>
+  password: <%= ENV["APP_DATABASE_PASSWORD"] %>
+
 production:
-  adapter: solid_cable
-  connects_to:
-    database:
-      writing: cable
-  polling_interval: 0.1.seconds
-  message_retention: 1.day
+  primary:
+    <<: *prod_common
+  queue:
+    <<: *prod_common
