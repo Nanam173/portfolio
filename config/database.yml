@@ -36,5 +36,3 @@ production:
     <<: *prod_common
   queue:
     <<: *prod_common
-  cache:
-    <<: *prod_common
