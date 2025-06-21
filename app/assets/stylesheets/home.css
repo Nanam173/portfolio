@@ -9,16 +9,19 @@
  * Consider organizing styles into separate files for maintainability.
  */
 
-.introduction {
+.home {
   padding: 0 24px;
-  line-height: 1.5;
   font-size: 1.2rem;  
 }
 
-.introduction h2 {
+.home h2 {
   font-weight: normal;
   font-size: 30px;
   margin-bottom: 14px;
   padding-bottom: 14px;
   border-bottom: solid 1px #20cc98;
+}
+
+.home_container {
+  margin: 100px 0;
 }
