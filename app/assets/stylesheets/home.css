@@ -10,15 +10,15 @@
  */
 
 .introduction {
-  max-width: 800px;         /* コンテンツ幅の上限 */
-  margin: 0 auto;           /* 左右中央寄せ */
-  padding: 0 24px;          /* 左右に余白をつける（スマホにも優しい） */
-  text-align: left;       /* テキストを中央寄せ（任意） */
-  line-height: 1.5;         /* 読みやすい行間 */
+  padding: 0 24px;
+  line-height: 1.5;
   font-size: 1.2rem;  
 }
 
-.title {
-  font-size: 3.0rem;        /* タイトルの大きさ */
-  margin-bottom: 16px;      /* タイトル下の余白 */
+.introduction h2 {
+  font-weight: normal;
+  font-size: 30px;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: solid 1px #20cc98;
 }
