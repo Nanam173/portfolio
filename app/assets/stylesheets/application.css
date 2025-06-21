@@ -18,7 +18,6 @@ header {
    height: 60px;
    background-color: #20cc98;
    text-align: center;
-   opacity: 0.7;
    position: fixed;
    top: 0;
    z-index: 10;
