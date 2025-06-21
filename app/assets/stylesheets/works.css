@@ -19,14 +19,14 @@
 }
 
 .work-card {
-  display: block;                  /* a タグ全体をブロックに */
+  display: block;
   background-color: #fff;
   border-radius: 12px;
   padding: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   text-align: center;
-  text-decoration: none;          /* 下線を消す */
-  color: inherit;                 /* 親の文字色を引き継ぐ */
+  text-decoration: none;
+  color: inherit;
 }
 
 .work-card:hover {
